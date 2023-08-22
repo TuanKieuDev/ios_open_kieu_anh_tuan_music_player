@@ -8,8 +8,15 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
     }
 }
 
